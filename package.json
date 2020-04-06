@@ -1,0 +1,19 @@
+{
+  "name": "chat-socket",
+  "version": "1.0.0",
+  "description": "proyecto de chat con nodejs y socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deibyocampo/chat-sockets.git"
+  },
+  "author": "deiby ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deibyocampo/chat-sockets/issues"
+  },
+  "homepage": "https://github.com/deibyocampo/chat-sockets#readme"
+}
