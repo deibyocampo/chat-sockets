@@ -4,14 +4,17 @@
 	<meta charset="utf-8">
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 	<title>Chat with Socket.io & NodeJS</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.css">
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="main.js"></script>
 </head>
 <body>
 	<h1> Chat Interactive </h1>
-	<div id="messages">
-		
-	</div>
+	<div id="messages">	</div>
+	<form onsubmit="return addMessage(this);">
+		<input id="nickname" type="text" placeholder="Nick"/>
+		<textarea id="text" placeholder="Mensaje"></textarea>
+		<input type="submit" value="Enviar"/>
+	</form>
 </body>
 </html>

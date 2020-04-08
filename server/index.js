@@ -23,6 +23,12 @@ var messages = [{
 io.on('connection', function(socket) {
 	console.log("el cliente con ip: "+socket.handshake.address+"se ha conectado");
 	socket.emit('messages', messages);
+
+	socket.on('add-message', function(data){
+		messages.push(data);
+
+		io.sockets.emit('messages', messages);
+	});
 });
 
 

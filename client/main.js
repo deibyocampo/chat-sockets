@@ -17,3 +17,14 @@ function render(data){
 
 	document.getElementById('messages').innerHTML = html;
 }
+
+function addMessage(e){
+	let datas = {
+		nickname: document.getElementById('nickname').value,
+		text: document.getElementById('text').value
+	};
+
+	document.getElementById('nickname').style.display = 'none';
+	socket.emit('add-message', datas);
+	return false;
+}
